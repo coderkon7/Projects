@@ -1,3 +1,5 @@
+# Step 1: This part of the program determines the current season.
+
 snow = input("Is there snow outside? y/n: ").lower()
 if snow == "y":
     snow_melting = input("Is the snow melting? y/n: ").lower()
@@ -24,22 +26,29 @@ elif snow == "n":
 else:
     print("Invalid input. Please only type either 'y' or 'n'")
 
+    
+
+# Step 2: This part of the program uses the information collected from Step 1 and determines what the user should wear, eat, and do.
 
 if season == "spring":
     print("The current season is: Spring")
+    print("You should wear a T-shirt underneath a rain jacket, and pants underneath splash pants")
     print("You should have a cookie")
     print("You should go outside to ride your bicycle")
 elif season == "summer":
     print("The current season is: Summer")
+    print("You should wear shorts and a T-shirt")
     print("You should have an ice cream cone and a popsicle")
     print("You should go to the beach")
 elif season == "fall":
     print("The current season is: Fall")
+    print("You should wear shorts, T-shirt, and a hoodie")
     print("You should have an ice cream cone (to enjoy the last bits of warm temperatures) and a cookie")
     print("You should go make a leaf pile")
 elif season == "winter":
     print("The current season is: Winter")
+    print("You should wear a T-shirt underneath a hoodie, and pants.")
     print("You should have a cup of hot chocolate")
     print("You should go sledding")
 else:
-    print("This is not a known season within the program.")
+    print(season, "is not a known season within the program.")
