@@ -24,8 +24,8 @@ for num in random_numbers:
 print("These are the random numbers squared: ", squared_random_numbers)
 
 # Seperating Odd and Even square values
-even_numbers = []
 odd_numbers = []
+even_numbers = []
 
 for squared_num in squared_random_numbers:
     if squared_num % 2 == 0:
