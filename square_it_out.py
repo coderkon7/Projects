@@ -1,6 +1,7 @@
 import random
 print("Welcome! This program will generate a list of random numbers between a range you enter, square each number, and seperate the odd numbers from the even numbers.")
 
+
 startNum = int(input("Enter the beginning number for the range: "))
 endNum = int(input("Enter the ending number for the range: "))
 
@@ -9,6 +10,7 @@ random_numbers = []
 for i in range(5):
     randomNum = random.randint(startNum, endNum)
     random_numbers.append(randomNum)
+ 
 
 print(f"These are 5 random numbers generated between {startNum} and {endNum}: {random_numbers}")
 
