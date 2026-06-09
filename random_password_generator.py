@@ -4,7 +4,7 @@ alphabet = ('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
 numbers = ('1','2','3','4','5','6','7','8','9')
 
 print("Welcome to my password generator!")
-print("This will generate a password with both uppercase and lowercase letters, along with numbers. You can also choose the length of the generated password.")
+print("This will generate a password with both uppercase and lowercase letters, along with numbers. You can also choose the length of the generated password. \nNote: For a strong password, we recommend you use more than 8 characters.")
 length = int(input("How long would you like the length of the password to be (including all letters and numbers)? "))
 
 for i in range(length):
@@ -19,4 +19,6 @@ for i in range(length):
     elif letter_or_integer == 2:
         password += numbers[random.randint(0,8)]
 
+if length <= 8:
+    print("Please Note: This is not a strong password. You may want to select a longer character length.")
 print("Here is your generated password: ", password)
