@@ -2,7 +2,7 @@ import pygame
 
 pygame.init()
 
-# Note that this took a while to finish and there was research involved
+# Note that this project took a while to finish and there was research involved
 
 # BASIC ESSENTIALS
 WINDOW_WIDTH, WINDOW_HEIGHT = 500, 400
